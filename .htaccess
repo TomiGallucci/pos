@@ -1,0 +1,8 @@
+Options All -Indexes
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^solucionesinformaticasros.online$ [OR]
+
+RewriteCond %{HTTP_HOST} ^www.solucionesinformaticasros.online$
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1
